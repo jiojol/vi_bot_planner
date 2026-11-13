@@ -1,0 +1,382 @@
+{
+  "episodes": 37,
+  "physics_substeps": 135430,
+  "collisions": 0,
+  "grass_episodes": 0,
+  "height_entries": 0,
+  "minimum_actor_clearance_m": 0.1473222120770204,
+  "policy_not_invoked": true,
+  "contract": "same PyBullet engine, fresh worlds, original 100Hz collision/support/grass checks; no locomotion or hardware validation",
+  "records": [
+    {
+      "episode_id": "holdout_039_e00_corrupt",
+      "subset": "flat_formal",
+      "substeps": 8670,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": 0.1473222120770204
+    },
+    {
+      "episode_id": "holdout_006_e00_clean",
+      "subset": "difficult_seen",
+      "substeps": 11390,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": 0.4800287980106803
+    },
+    {
+      "episode_id": "holdout_006_e00_corrupt",
+      "subset": "difficult_seen",
+      "substeps": 10090,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": 0.49673652362847864
+    },
+    {
+      "episode_id": "seen21_030_e00_corrupt",
+      "subset": "difficult_seen",
+      "substeps": 10460,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": 0.5460627486488862
+    },
+    {
+      "episode_id": "stress_00_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "seen21_046_e00_corrupt",
+      "subset": "difficult_seen",
+      "substeps": 10220,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": 0.42118353437215594
+    },
+    {
+      "episode_id": "stress_00_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_01_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1710,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_01_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_02_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1710,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_02_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_03_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1710,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_03_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1710,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_04_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1560,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_04_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1560,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_05_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1560,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_05_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1560,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_06_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_06_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_07_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_07_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_08_e00_clean",
+      "subset": "stair_bypass",
+      "substeps": 3230,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_08_e00_corrupt",
+      "subset": "stair_bypass",
+      "substeps": 3480,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_09_e00_clean",
+      "subset": "stair_bypass",
+      "substeps": 3260,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_09_e00_corrupt",
+      "subset": "stair_bypass",
+      "substeps": 3240,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_10_e00_clean",
+      "subset": "stair_bypass",
+      "substeps": 3470,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_10_e00_corrupt",
+      "subset": "stair_bypass",
+      "substeps": 3480,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_11_e00_clean",
+      "subset": "stair_bypass",
+      "substeps": 3540,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_11_e00_corrupt",
+      "subset": "stair_bypass",
+      "substeps": 3560,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_12_e00_clean",
+      "subset": "stair_bypass",
+      "substeps": 3950,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_12_e00_corrupt",
+      "subset": "stair_bypass",
+      "substeps": 3950,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_13_e00_clean",
+      "subset": "stair_bypass",
+      "substeps": 7950,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_13_e00_corrupt",
+      "subset": "stair_bypass",
+      "substeps": 7960,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_14_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_14_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1700,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_15_e00_clean",
+      "subset": "stair_stress",
+      "substeps": 1730,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    },
+    {
+      "episode_id": "stress_15_e00_corrupt",
+      "subset": "stair_stress",
+      "substeps": 1720,
+      "poses_match": true,
+      "collision": false,
+      "grass_area_m2": 0.0,
+      "height_entry": false,
+      "minimum_actor_clearance_m": null
+    }
+  ]
+}

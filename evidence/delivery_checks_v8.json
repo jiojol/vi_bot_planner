@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "candidate": "v8",
+  "closed_loop_cases": 37,
+  "software_tests": 126,
+  "complete_videos": 4,
+  "source_bundle_sha256": "a517150dbf3bc122096b08694d291eaded0e35ca0bb125a24afd4c12e8182cd0",
+  "default_mode_unchanged": true
+}

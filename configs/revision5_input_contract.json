@@ -1,0 +1,57 @@
+{
+  "status": "research_runtime_contract_not_robot_release",
+  "frames": {
+    "odom": "fixed right-handed, metres, z up; zero aligned to a MEASURED initial support plane, never inferred from base-origin z",
+    "odometry": "[x_m,y_m,yaw_rad], current gravity-aligned base projection",
+    "lidar_xyz": "current yaw-only navigation frame; foot/support-relative height, already deskewed upstream",
+    "lidar_sensor_xyz": "raw sensor xyz with matching lidar_sensor_valid and scan-time T_odom_lidar [4,4]",
+    "T_odom_depth_optical": "column-vector optical right/down/forward to fixed odom, matching depth exposure",
+    "support_odom_z": "measured/estimated current support origin in the declared odom; simulation uses ideal sensor pose"
+  },
+  "required_common": [
+    "rgb uint8[H,W,3]",
+    "lidar_xyz float[N,3]",
+    "lidar_valid_mask bool[N]",
+    "camera_pose float[3] at RGB exposure",
+    "scan_time seconds",
+    "time seconds",
+    "odometry float[3]",
+    "measured_twist [vx_mps,yaw_rate_radps]",
+    "local_goal [forward_m,left_m]"
+  ],
+  "full_metric_depth": [
+    "depth_m float[H,W] in metres, never raw uint16 or DA2 relative depth",
+    "depth_valid bool[H,W]",
+    "depth_intrinsics float[3,3] for rectified exposure",
+    "depth_rgb uint8[H,W,3] aligned to depth",
+    "T_odom_depth_optical float[4,4]",
+    "lidar_sensor_xyz float[N,3]",
+    "lidar_sensor_valid bool[N]",
+    "T_odom_lidar float[4,4]",
+    "sensor_time seconds"
+  ],
+  "hardware_sensor_protocol": "r5_mid360_d435i_downward_rgb_calibrated_v2; primary rgb is the same downward D435i image, resized for S1; no additional forward RGB input",
+  "timestamp_contract": "full acquisition-time SE(3), including roll/pitch, before ground segmentation; moving real scans require upstream per-return deskew and synchronization",
+  "simulation_limits": [
+    "ideal fused IMU and odometry",
+    "coverage sampling is NOT Livox non-repetitive scan timing",
+    "mount transforms are simulation fixtures, not measured hardware calibration",
+    "missing support is unknown; a censored frontier may request SAFE_STOP without being claimed as a measured negative drop",
+    "ground material head is simulation-domain only"
+  ],
+  "mode_control": "mode argument: vanilla_s1 / s1_astar_v4 / s1_guided_flow_2d / s1_guided_flow_25d_full; default stays s1_astar_v4",
+  "outputs": {
+    "vx": "nonnegative high-level m/s",
+    "vy": 0.0,
+    "yaw_rate": "rad/s",
+    "diagnostic.mode": "NORMAL_TROT / STAIR_CLIMB / IMPASSABLE_HIGH / SAFE_STOP / YIELD_WAIT; terminal stop additionally reported",
+    "STAIR_CLIMB": "request only; SDK mapping pending_onboard_measurement"
+  },
+  "not_allowed_inputs": [
+    "road polygons",
+    "height surface truth",
+    "actor identities or future schedules",
+    "teacher commands"
+  ],
+  "calibration_status": "pending_onboard_measurement"
+}

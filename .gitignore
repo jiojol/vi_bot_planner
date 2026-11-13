@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.env.*
+/artifacts/*
+!/artifacts/revision4/
+/artifacts/revision4/*
+!/artifacts/revision4/ground_head/
+/artifacts/revision4/ground_head/*
+!/artifacts/revision4/ground_head/linear_model.npz

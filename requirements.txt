@@ -1,0 +1,6 @@
+# Install a matching PyTorch / torchvision build for your platform first.
+numpy==2.3.4
+scipy==1.16.2
+pillow>=11
+transformers==4.56.2
+huggingface-hub==0.36.2

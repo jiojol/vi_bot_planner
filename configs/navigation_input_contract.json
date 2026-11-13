@@ -1,0 +1,27 @@
+{
+  "scope": "navigation-only planar simulation; high-level velocity output for future Unitree built-in gait integration",
+  "frames": {
+    "odometry": "current ego/base[x_m,y_m,yaw_rad] in one consistent world/odometry frame",
+    "camera_pose": "ego/base[x_m,y_m,yaw_rad] at RGB capture time, NOT optical camera origin; camera extrinsic is applied separately from config",
+    "lidar_xyz": "Nx3 measured points in CURRENT navigation frame[x_forward,y_left,z_up], already ego-motion-compensated from scan_time",
+    "lidar_valid_mask": "N boolean flags; missing/no-return is unknown, never free",
+    "measured_twist": "current measured forward speed m/s and yaw rate rad/s",
+    "local_goal": "2-vector in current navigation XY; external route guidance, no global map needed by Navigator"
+  },
+  "timestamps": "time and scan_time are monotonic seconds on same clock; camera_pose matches RGB timestamp",
+  "images": "uint8 RGB240x320x3; not BGR/stereo or simulated segmentation masks",
+  "outputs": "vx m/s, vy=0 m/s, yaw_rate rad/s; not joint targets",
+  "sim_preconditions": [
+    "initial paved support confirmed",
+    "flat ground and calibrated level camera",
+    "ideal odometry in tests",
+    "forward-only0..0.5m/s, yaw\u00b11rad/s, acceleration1m/s\u00b2, yaw acceleration2rad/s\u00b2"
+  ],
+  "not_validated": [
+    "gait/feet/stair climbing",
+    "real SDK limit settings",
+    "real sensor6DOF calibration or odometry drift",
+    "arbitrary materials/weather/occluded/adversarial human behavior",
+    "unbounded sensor outage"
+  ]
+}

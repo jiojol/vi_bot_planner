@@ -1,0 +1,49 @@
+{
+  "camera": {
+    "width": 320,
+    "height": 240,
+    "hfov_deg": 90,
+    "xyz": [
+      0.25,
+      0,
+      0.55
+    ]
+  },
+  "lidar": {
+    "horizontal": 256,
+    "vertical_deg": [
+      -15,
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "range": 8.0,
+    "xyz": [
+      0,
+      0,
+      0.65
+    ]
+  },
+  "robot": {
+    "length": 0.6,
+    "width": 0.35,
+    "height": 0.3,
+    "clearance": 0.08,
+    "vmax": 0.5,
+    "wmax": 1.0,
+    "amax": 1.0,
+    "alphamax": 2.0
+  },
+  "decision_dt": 0.1,
+  "physics_dt": 0.01,
+  "goal_lookahead": 2.5,
+  "ground_head": "artifacts/revision4/ground_head/linear_model.npz",
+  "checkpoint": "artifacts/revision3/model.pt",
+  "policy_sha256": "8b3501e6505a4b96b90fc8d6c38f537c37a57ffe921c8e3607930f5dbcaa567d",
+  "ground_head_sha256": "a3b48b724cebd51e7ebc54749e2293b00d69b45cb6b6a5f959ce1933bd377316",
+  "scope": "neural proposal + sensor local planner; no gait; verified finite simulation suite only"
+}
